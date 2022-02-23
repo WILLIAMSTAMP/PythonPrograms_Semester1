@@ -1,10 +1,11 @@
-
-# Honest Harry Used Cars - Sales Program
-# Written by: William Stamp
+import datetime
+from datetime import date
+# Honest Harrys Used Cars - Sales Program
+# written by: William Stamp
 # Date: Feb 13 2022
 import datetime
 from datetime import date
-# Constants
+# Constanta
 HST = .15
 LicFee_75 = 75.00
 LicFee_165 = 165.00
@@ -12,8 +13,7 @@ TransFee_Rate = 0.01
 TransFee_LxRate = 0.016
 Fin_Fee = float(39.99)
 date_format = "%Y-%m-%d"
-
-# User Inputs
+# User Inputs"
 while True:
     try:
         Inv_Date = input("Enter the date of the sales invoice (YYYY-MM-DD): ")
@@ -174,7 +174,6 @@ while True:
     else:
         break
 SellPrice = float(SellPrice)
-
 while True:
     try:
         allowed_char = set("1234567890.")
@@ -191,7 +190,6 @@ while True:
     else:
         break
 TradeIn = float(TradeIn)
-
 while True:
     try:
         allowed_char = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz,-.'")
@@ -253,7 +251,6 @@ while True:
     else:
         break
     break
-
 TradeInDsp = "${:,.2f}".format(TradeIn)
 Mon_PayDsp = New_Price / Payments
 PaymentsDsp = 12 * Choice
@@ -269,7 +266,6 @@ Tot_Sales_Cost = SellPrice - TradeIn + LicFee + Taxes + Trans_Fee
 Tot_Sales_CostDsp = "${:,.2f}".format(Tot_Sales_Cost)
 today = date.today()
 InvoiceDatePlus10Dsp = InvoiceDate + datetime.timedelta(days=10)
-
 # Customers Display
 print("        Honest Harry Car Sales  ")
 print("       Used Car Sale and Receipt ")
