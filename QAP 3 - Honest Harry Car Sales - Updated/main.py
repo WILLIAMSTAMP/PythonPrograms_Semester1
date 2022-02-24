@@ -312,4 +312,5 @@ while True:
     print()
     Cont = input("Would you like to process another sale?  (Y/N): ").capitalize()
     if Cont == "N":
+        print()
         exit()
